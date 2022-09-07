@@ -1,0 +1,87 @@
+.about-section {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    position: relative;
+    .left {
+        width: 25%;
+        position: relative;
+        .cylinder-shape {
+            // position: absolute;
+            margin-left: 100px;
+            margin-top: 60px;
+            width: 380px;
+            height: 450px;
+            z-index: 999;
+            background-color: #a294cd;
+            border-radius: 60% 60% 0 0;
+            // animation: linear rotateStar infinite 5s;
+        }
+    }
+
+    .right {
+        height: 600px;
+        width: 70%;
+        background-color: #f1e4ef;
+        margin-right: 0;
+        .overlap-content {
+            position: absolute;
+            top: -130px;
+            bottom: 0;
+            left: 920px;
+            img.star-shape {
+                width: 90px;
+                height: 90px;
+                // padding-left: -90px;
+                // padding-top: 200px;
+                margin-left: -45px;
+                // margin-top: -80px;
+            }
+            .video-content {
+                width: 180px;
+                height: 100px;
+                border: 3px solid #ffffff;
+                margin-left: 20px;
+            }
+        }
+        .content {
+            display: grid;
+            place-items: center;
+            padding-top: 130px;
+            p.first-content {
+                font-size: 32px;
+                letter-spacing: 2px;
+            }
+            p.first-content span {
+                color: #e36944;
+            }
+            .inner-content {
+                display: flex;
+                justify-content: space-between;
+                font-size: 12px;
+                .left-inner {
+                    width: 165px;
+                    padding-right: 70px;
+                    p {
+                        color: grey;
+                    }
+                }
+                .right-inner {
+                    width: 180px;
+                    p {
+                        color: grey;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes rotateStar {
+    from {
+        top: 0%;
+    }
+    to {
+        top: 100%;
+    }
+}
