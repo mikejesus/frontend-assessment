@@ -1,0 +1,100 @@
+.statistics {
+    margin-top: 90px;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    position: relative;
+
+    .left {
+        height: 240px;
+        width: 65%;
+
+        background-color: #ffe5de;
+        padding-right: 50px;
+        padding-top: 20px;
+        padding-left: 120px;
+        padding-bottom: 290px;
+        position: relative;
+        .content {
+            p.first-content {
+                font-size: 50px;
+                font-family: Enriqueta;
+                letter-spacing: 2px;
+                color: #0e1b4d;
+                span {
+                    color: #e36944;
+                }
+            }
+            p.second-content {
+                color: gray;
+            }
+            .three-stats {
+                display: flex;
+                .stat {
+                    width: 100px;
+                    height: 140px;
+                    background: linear-gradient(0deg, #ffe4de, #ffffff 90%) fixed no-repeat;
+                    border-radius: 72px 72px 0 0;
+                    rotate: 24deg;
+                    margin: 0 15px;
+                    text-align: center;
+                    padding-top: 20px;
+
+                    p,
+                    h3 {
+                        rotate: 338deg;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                    h3 {
+                        margin: 0 35px;
+                        color: #e36944;
+                        font-size: 28px;
+                        font-family: "Times New Roman", Times, serif;
+                    }
+                }
+
+                .stat2 {
+                    width: 100px;
+                    height: 155px;
+                    background: linear-gradient(0deg, #ffffff, #ffe4de 90%) fixed no-repeat;
+                    border-radius: 0px 0px 72px 72px;
+                    rotate: 24deg;
+                    margin: 0 15px 0 10px;
+                    text-align: center;
+                    padding-top: 5px;
+                    p,
+                    h3 {
+                        rotate: 338deg;
+                        margin: 30px auto;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                    h3 {
+                        margin: -5px 30px;
+                        color: #e36944;
+                        font-size: 28px;
+                        font-family: "Times New Roman", Times, serif;
+                    }
+                }
+            }
+        }
+        .image-overlap {
+            position: absolute;
+            left: 820px;
+            top: 50px;
+            background-image: url("./../../../assets/images/model_pics.png");
+            background-color: #e36944;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: bottom -5px right 15px;
+            width: 310px;
+            height: 430px;
+            border-radius: 50% 50% / 30% 30%;
+            animation-name: expand_ellipse 3800ms;
+            animation-fill-mode: forwards;
+        }
+    }
+}

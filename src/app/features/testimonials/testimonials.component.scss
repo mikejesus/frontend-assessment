@@ -1,0 +1,75 @@
+.testimonials {
+    margin-top: 80px;
+    display: grid;
+    place-items: center;
+    .content {
+        width: 80%;
+        // height: 150px;
+        background-color: white;
+        padding: 30px;
+        margin-left: -150px;
+        position: relative;
+        .main {
+            width: 600px;
+            padding-left: 50px;
+            .quote {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                color: #e36944;
+            }
+            .text-description {
+                font-size: 30px;
+                font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+            }
+            .name {
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .address {
+                font-size: 10px;
+            }
+            .grouped {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                .three-dots {
+                    width: 100px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    i {
+                        color: white;
+                        border: 2px solid #e36944;
+                        margin-right: 10px;
+                    }
+                    i.colored {
+                        color: #e36944;
+                        background-color: #e36944;
+                    }
+                }
+            }
+        }
+
+        .side-image {
+            position: absolute;
+            top: 50px;
+            left: 750px;
+            width: 290px;
+            height: 290px;
+            background-color: #f8f4f0;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+
+            .image-content {
+                width: 270px;
+                height: 270px;
+                background: url("./../../../assets/images/model_pics.png");
+                background-size: cover;
+                background-color: #e36944;
+                border-radius: 50%;
+                background-position: top 5px right 10px;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

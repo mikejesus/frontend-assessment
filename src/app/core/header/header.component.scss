@@ -4,10 +4,26 @@ nav {
     // justify-content: space-around;
     align-items: center;
     color: grey;
-    p {
-        padding-right: 50%;
-        color: black;
+    .logo-area {
+        display: flex;
+        position: relative;
+        margin-right: 450px;
+        p {
+            padding-right: 50%;
+            color: #0e1b4d;
+            font-size: 24px;
+        }
+        div {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #f5673c;
+            position: absolute;
+            top: 37px;
+            left: 55px;
+        }
     }
+
     ul {
         display: flex;
         justify-content: space-between;
@@ -29,6 +45,7 @@ nav {
         display: flex;
         align-items: center;
         justify-content: center;
+        color: white;
     }
     ul li span {
         background-color: black;

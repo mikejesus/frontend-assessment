@@ -1,7 +1,7 @@
-<div class="product-card">
+<div class="product-card wow fadeInRightBig" data-wow-duration="1.5s">
   <div class="container">
-    <img src="http://placehold.it/500x300" alt="productImage" />
+    <img [src]="imgSource" alt="productImage" class="product-image" />
   </div>
-  <p>Product Name</p>
-  <p>$98.94</p>
+  <p class="title">{{ productName }}</p>
+  <p class="sub-title">{{ productPrice }}</p>
 </div>

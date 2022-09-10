@@ -1,12 +1,16 @@
 .hero-section {
     display: flex;
     justify-content: space-between;
+    // padding: 50px 0 20px 0;
+
     div h1 {
-        font-size: 80px;
-        font-family: "Aref Ruqaa" sans-serif;
+        font-size: 70px;
+        font-family: Enriqueta;
+        color: #0e1b4d;
         letter-spacing: 5px;
         line-height: 6rem;
         position: relative;
+        padding-bottom: 40px;
     }
     div h1 .inner-box {
         width: 130px;
@@ -35,24 +39,28 @@
         font-size: 20px;
         color: grey;
         line-height: 1.5rem;
+        padding-bottom: 40px;
     }
     .buttons {
         display: flex;
         margin-top: 35px;
+        padding-bottom: 90px;
+
+        .left-button {
+            background-color: #f5683c;
+            color: white;
+            padding: 15px;
+            border-radius: 30px;
+        }
+        .right-button {
+            // background-color: #f5683c;
+            color: black;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
     }
-    .buttons .left-button {
-        background-color: #f5683c;
-        color: white;
-        padding: 15px;
-        border-radius: 30px;
-    }
-    .buttons .right-button {
-        // background-color: #f5683c;
-        color: black;
-        padding: 15px;
-        border-radius: 10px;
-        font-weight: bold;
-    }
+
     .right-content {
         width: 40%;
     }
@@ -61,5 +69,6 @@
         height: 100%;
         margin-top: 30px;
         margin-left: -80px;
+        padding-bottom: 40px;
     }
 }

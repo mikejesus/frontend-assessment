@@ -1,0 +1,9 @@
+<div class="accordion">
+  <p class="title" (click)="opened = !opened">
+    {{ title }}
+    <span><i [ngClass]="!opened ? 'fa fa-plus' : 'fa fa-minus'"></i></span>
+  </p>
+  <div class="content-container" [class.opened]="opened">
+    <p class="content">{{ content }}</p>
+  </div>
+</div>

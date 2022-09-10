@@ -1,6 +1,36 @@
 .product-list {
     display: grid;
-    // gap: 10px;
+    gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 50px;
+    margin-top: 90px;
+
+    .first-product-card {
+        .first-container {
+            width: 280px;
+            height: 290px;
+            h2 {
+                font-size: 37px;
+                line-height: 1.4;
+                font-family: Enriqueta;
+                color: #0e1b4d;
+                .essential {
+                    color: #f5683c;
+                }
+            }
+            p {
+                font-size: 15px;
+                line-height: 1.4;
+                color: gray;
+                padding-bottom: 20px;
+            }
+
+            a {
+                background-color: transparent;
+                border: 1px solid #f5683c;
+                padding: 15px;
+                border-radius: 50px;
+                color: #f5683c;
+            }
+        }
+    }
 }

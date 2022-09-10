@@ -10,7 +10,12 @@ import { HeroSectionComponent } from './features/hero-section/hero-section.compo
 import { AboutSectionComponent } from './features/about-section/about-section.component';
 import { ProductListComponent } from './features/product-list/product-list.component';
 import { ProductCardComponent } from './shared/product-card/product-card.component';
-
+import { StatisticsSectionComponent } from './features/statistics-section/statistics-section.component';
+import { QuestionsAndAnswersComponent } from './features/questions-and-answers/questions-and-answers.component';
+import { AccordionComponent } from './shared/accordion/accordion.component';
+import { TestimonialsComponent } from './features/testimonials/testimonials.component';
+import { ClientsComponent } from './features/clients/clients.component';
+import { NgwWowModule } from 'ngx-wow';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,13 +25,15 @@ import { ProductCardComponent } from './shared/product-card/product-card.compone
     HeroSectionComponent,
     AboutSectionComponent,
     ProductListComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    StatisticsSectionComponent,
+    QuestionsAndAnswersComponent,
+    AccordionComponent,
+    TestimonialsComponent,
+    ClientsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgwWowModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

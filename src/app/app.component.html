@@ -1,13 +1,28 @@
 <!-- <router-outlet></router-outlet> -->
-<app-splash-screen></app-splash-screen>
+<app-splash-screen *ngIf="showSplash"></app-splash-screen>
 
-<div class="wrapper">
-  <app-header></app-header>
-  <app-hero-section></app-hero-section>
-</div>
-<app-about-section></app-about-section>
+<ng-container *ngIf="!showSplash" style="margin-top: 10px">
+  <div class="wrapper">
+    <app-header></app-header>
+    <app-hero-section></app-hero-section>
+  </div>
+  <app-about-section></app-about-section>
 
-<div class="wrapper">
-  <app-product-list></app-product-list>
-</div>
-<app-footer></app-footer>
+  <div class="wrapper">
+    <app-product-list></app-product-list>
+  </div>
+
+  <app-statistics-section></app-statistics-section>
+
+  <div class="wrapper">
+    <app-questions-and-answers></app-questions-and-answers>
+  </div>
+  <div class="wrapper">
+    <app-testimonials></app-testimonials>
+  </div>
+
+  <div class="wrapper">
+    <app-clients></app-clients>
+  </div>
+  <app-footer></app-footer>
+</ng-container>
